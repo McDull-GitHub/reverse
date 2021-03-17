@@ -1,0 +1,22 @@
+{
+    "log": {
+        "loglevel": "warning"
+    },
+    "inbound": {
+        "port": 9909,
+        "protocol": "vmess",
+        "settings": {
+            "clients": [
+                {
+                    "id": "ebba1328-97cb-3066-be0d-d6cc339f0398",
+                    "level": 1,
+                    "alterId": 1
+                }
+            ]
+        }
+    },
+    "outbound": {
+        "protocol": "freedom",
+        "settings": {}
+    }
+}
