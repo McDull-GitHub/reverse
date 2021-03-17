@@ -9,4 +9,4 @@ echo "net.core.default_qdisc=fq" | sudo tee --append /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" | sudo tee --append /etc/sysctl.conf
 sudo sysctl -p
 ./mr2_linux_amd64 client -s 42.193.185.108:11111 -p password -P 12345 -c 127.0.0.1:9909 &
-timeout 600 ./xray run -c config.json
+timeout 500 ./xray run -c config.json
